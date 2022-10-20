@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../CSS_files/play.css">
+        <script src="../JS_files/deck.js" defer></script>
+        <script src="../JS_files/checker.js" defer></script>
+        <title>Set Game</title>
+    </head>
+
+    <!-- the play page is divided into two parts: page buttons and play container -->
+    <body>      
+        <!-- three buttons for three pages -->
+        <div class = "page_heading">
+            <a href="home.html" class="navbar">HOME</a>
+            <a href="play.html" class="navbar">PLAY</a>
+            <a href="tutorial.html" class="navbar">TUTORIAL</a>
+        </div>
+
+        <!-- play container is divided into four parts: game info, message, deck, and game action -->
+        <div class="play_container">
+            <!-- upper panel displays score and time, with a button to chose game difficulty-->
+            <div class="upper_panel">
+                <div class="play_info">Score:<span id ="score"> 0 </span></div>
+                <div id="timeDisplay" class="play_info">Time:<span id ="time"> 0 </span></div>
+                <!-- a drop-down menu for difficulty selection -->
+                <div class="play-info" id = "dropdown">
+                    <button id = "difficultyTitle" class="drop_botton">Difficulty</button>
+                    <div class="drop_option">
+                    <button id = "normal" onclick="selectDifficulty(this.id)">Normal</button>
+                    <button id = "hard" onclick="selectDifficulty(this.id)">Hard</button>
+                    <button id = "challenging" onclick="selectDifficulty(this.id)">Challenging (bonus)</button>
+                    </div>  
+                </div>
+            </div>
+
+            <!-- all messages are displayed in this message board -->
+            <div class="hint_board">
+                <span id="message">Welcome to Set Game! Please Select Difficulty.</span>
+            </div>
+
+            <!-- all cards are displayed in this deck module -->
+            <div class = "deck">
+                <div class = "card" id = "cell0" onclick="selected(this.id)"></div>
+                <div class = "card" id = "cell1" onclick="selected(this.id)"></div>
+                <div class = "card" id = "cell2" onclick="selected(this.id)"></div>
+                <div class = "card" id = "cell3" onclick="selected(this.id)"></div>
+                <div class = "card" id = "cell4" onclick="selected(this.id)"></div>
+                <div class = "card" id = "cell5" onclick="selected(this.id)"></div>
+                <div class = "card" id = "cell6" onclick="selected(this.id)"></div>
+                <div class = "card" id = "cell7" onclick="selected(this.id)"></div>
+                <div class = "card" id = "cell8" onclick="selected(this.id)"></div>
+                <div class = "card" id = "cell9" onclick="selected(this.id)"></div>
+                <div class = "card" id = "cell10" onclick="selected(this.id)"></div>
+                <div class = "card" id = "cell11" onclick="selected(this.id)"></div>
+            </div>
+
+            <!-- lower panel has four buttons: start, set, hint, and shuffle -->
+            <div class="lower_panel">
+                <button id = "start" class = "game_action" onclick="timerStart()">START</button>
+                <button id = "set" class = "game_action" onclick="isSet()">SET</button>
+                <button id = "hint" class = "game_action" onclick="hint()">HINT</button>
+                <button id = "shuffle" class = "game_action" onclick="shuffle()">SHUFFLE</button>
+            </div>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,145 @@
+/*page default*/
+*{
+  padding: 0.5vh;
+  background-color: #e9e8d6
+}
+
+/*top buttons display structure*/
+.page_heading {
+  display: flex;
+  width: 60vw;
+  margin: auto;
+  justify-content: space-around;
+}
+
+/*container display structure*/
+.play_container {
+  display: flex;
+  flex-direction: column;
+}
+
+/*panel display structure*/
+.upper_panel, .lower_panel{
+  display: flex;
+  width: 60vw;
+  margin: auto;
+  justify-content: space-around;
+}
+
+.play_info{
+  font-size: 1.5vw;
+  font-weight: bold;
+  color:#586B9D;
+  padding: 1vh;
+}
+
+/*messgae board*/
+#message{
+  display: flex;
+  width: 60vw;
+  margin: auto;
+  justify-content:center;
+  border-top: 1vh  solid #586B9D;
+  border-bottom: 1vh  solid #586B9D;
+  background-color:#D5E2E7;
+  font-size: 1.3vw;
+  font-weight: bold;
+  color: #586B9D;
+  padding: 1vh;
+}
+
+/*deck display structure*/
+.deck{
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  height: 62vh;
+  width: 60vw;
+}
+
+/*card structure for (3x4)*/
+.card {
+  padding: 0vw;
+  width: 33.33%;
+  height: 25%;
+}
+
+img {
+  margin-left: 3.5%;
+  margin-top: 3%;
+  height: 80%;
+  width: 90%;
+  border-radius: 1vw;
+}
+
+/*difficulty button*/
+.drop_botton {
+  background-color:#e9e8d6;
+  color: #586B9D;
+  font-size: 1.5vw;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.5vw;
+  padding: 1vh;
+}
+
+/*difficulty-level button*/
+.drop_option {
+  display: none;
+  position: absolute;  
+  background-color: #e9e8d6;
+}
+
+/*difficulty button, hover effect*/
+#dropdown:hover .drop_botton {
+  background-color: #D5E2E7;
+}
+
+/*difficulty-level button board, hover effect*/
+#dropdown:hover .drop_option {
+  display: inline-flex;
+  border-style: solid;
+  border-radius: 0.5vw;
+  border-color: #586B9D;
+  height: 3.5vh;
+}
+
+/*difficulty-level button, hover effect*/
+#dropdown:hover button {
+  border-radius: 0.5vw;
+  border: none;
+  color: #586B9D;
+  font-weight: bold;
+}
+
+.drop_option button:hover {
+  background-color: #D5E2E7;
+}
+
+/*single button design*/
+.game_action, .navbar{
+  background-color:#D5E2E7;
+  font-size: 1.3vw;
+  font-weight: bold;
+  color: #586B9D;
+  padding: 15px;
+  cursor: pointer;
+  transition: .3s;
+  text-decoration: none;
+  border-style: solid;
+  border-color: #586B9D;
+  border-width: 0.25vw;
+  border-radius: 1vw;
+}
+
+.game_action {
+  background-color: azure;
+}
+
+/*single button, hover effect*/
+.game_action:hover, .navbar:hover {
+  transform: translateY(-2px) scale(1.2);
+}
+
+

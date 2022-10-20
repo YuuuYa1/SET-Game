@@ -1,0 +1,175 @@
+/*page default*/
+*{
+    padding: 0.5vh;
+    background-color: #e9e8d6
+}
+
+/*top buttons display structure*/
+.page_heading {
+    display: flex;
+    width: 60vw;
+    margin: auto;
+    justify-content: space-around;
+}
+
+/*single button design*/
+.navbar{
+    background-color:#D5E2E7;
+    font-size: 1.3vw;
+    font-weight: bold;
+    color: #586B9D;
+    padding: 15px;
+    border-radius: 1vw;
+    cursor: pointer;
+    transition: .3s;
+    text-decoration: none;
+    border-style: solid;
+    border-color: #586B9D;
+    border-width: 0.25vw;
+}
+  
+/*single button, hover effect*/
+.navbar:hover {
+    transform: translateY(-2px) scale(1.2);
+}
+
+/*section display structure*/
+.game_intro {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+/*section title design*/
+h3 {
+    display: flex;
+    width: 60vw;
+    margin: auto;
+    justify-content:center;
+    border: 1vh  solid #586B9D;
+    border-radius: 1.5vw;
+    background-color:#D5E2E7;
+    font-size: 1.5vw;
+    font-weight: bold;
+    color: #586B9D;
+    padding: 1vh;
+}
+
+/*sub-section display structure*/
+.sub_intro{
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    margin: auto;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    background-color:#D5E2E7;
+    border-style: dashed;
+    border-width: 0.5vh;
+    border-radius: 1.5vw;
+    color: #586B9D;
+}
+.sub_intro>img{
+    background-color:#D5E2E7;
+    width: 30vw;
+    padding: 1vh;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1.5vw;
+}
+
+/*sub-title design*/
+h4{
+    text-align: center;
+    font-size: 1.5vw;
+    background-color: #D5E2E7;
+    margin-top: 2vh;
+ 	  margin-bottom: 2vh;
+}
+
+p{
+    color: black;
+    background-color: #D5E2E7;
+    font-size: 1.2vw;
+}
+
+/*container display structure*/
+.interactive_container {
+    display: flex;
+    flex-direction: column;
+}
+
+/*message board*/
+#message{
+    margin-top: 2vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    width: 60vw;
+    justify-content:center;
+    border-top: 1vh  solid #586B9D;
+    border-bottom: 1vh  solid #586B9D;
+    background-color:#D5E2E7;
+    font-size: 1.3vw;
+    font-weight: bold;
+    color: #586B9D;
+    padding: 1vh;
+}
+
+/*deck display structure*/
+.deck{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    height: 40vh;
+    width: 60vw;
+}
+
+/*card structure for (3x4)*/
+.card {
+    background-color: #D5E2E7;
+    padding: 0vw;
+    width: 33.33%;
+    height: 50%;
+}
+
+img {
+    margin-left: 3.5%;
+    margin-top: 3%;
+    height: 80%;
+    width: 90%;
+    border-radius: 1vw;
+}
+
+/*panel display structure*/
+.lower_panel{
+    display: flex;
+    width: 60vw;
+    margin: auto;
+    justify-content: space-around;
+}
+
+/*single button design*/
+.game_action, .navbar{
+    background-color:#D5E2E7;
+    font-size: 1.3vw;
+    font-weight: bold;
+    color: #586B9D;
+    padding: 15px;
+    cursor: pointer;
+    transition: .3s;
+    text-decoration: none;
+    border-style: solid;
+    border-color: #586B9D;
+    border-width: 0.25vw;
+    border-radius: 1vw;
+}
+  
+.game_action {
+    background-color: azure;
+}
+  
+/*single button, hover effect*/
+.game_action:hover, .navbar:hover {
+    transform: translateY(-2px) scale(1.2);
+}

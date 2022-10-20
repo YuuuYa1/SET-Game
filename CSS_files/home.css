@@ -1,0 +1,169 @@
+/*page default*/
+*{
+  padding: 0.5vh;
+  background-color: #e9e8d6
+}
+
+/*top buttons display structure*/
+.page_heading {
+  display: flex;
+  width: 60vw;
+  margin: auto;
+  justify-content: space-around;
+}
+
+/*single button design*/
+.navbar{
+  background-color:#D5E2E7;
+  font-size: 1.3vw;
+  font-weight: bold;
+  color: #586B9D;
+  padding: 15px;
+  border-radius: 1vw;
+  cursor: pointer;
+  transition: .3s;
+  text-decoration: none;
+  border-style: solid;
+  border-color: #586B9D;
+  border-width: 0.25vw;
+}
+
+/*single button design, hover effect*/
+.navbar:hover {
+  transform: translateY(-2px) scale(1.2);
+}
+
+/*flex box with two boxes: left and right inside*/
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 90vw;
+  margin-top: 5vh;
+  height: 60vh;
+  align-items: center;
+}
+
+/*left display structure*/
+.left{
+  position: relative;
+  width: 45vw;
+}
+
+/*set game image display*/
+.left>img{
+  width: 45vw;
+  object-fit: contain;
+  border-radius: 5vw;
+}
+
+/*hover effect on the image*/
+.hover{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #e9e8d6;
+  border-radius: 5vw;
+
+}
+
+.left:hover .hover {
+  opacity: 1;
+}
+
+/*fun fact display*/
+.text{
+  width: 75%;
+  color: black;
+  font-size: 2vw;
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+ 
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+}
+
+/*fun fact title display*/
+.text>h3{
+  font-size: 2vw;
+  font-weight:bold;
+  color: #c2473b;
+}
+
+/*fun fact content display*/
+.text>p{
+  font-size: 1.5vw;
+  color: black;
+  margin-left: 1vw;
+  text-align: left;
+  text-justify: inter-word;
+}
+
+/*Welcome to the set game title*/
+.welcome>p{
+  font-size: 5.5vw;
+  font-weight:bold;
+  color: #c2473b;
+  margin-top: 1.5vw;
+  margin-bottom: 2vw;
+  text-align: center;
+  text-justify: inter-word;
+}
+
+/*play now button display*/
+.button{
+  background-color:#e9e8d6;
+  font-size: 1.2vw;
+  text-align: center;
+  font-weight: bold;
+  color: #586B9D;
+  padding: 15px;
+  border-radius: 1.5vw;
+  cursor: pointer;
+  transition: .3s;
+  text-decoration: none;
+}
+
+/*welcome gif image display*/
+.welcome>img {
+  width: 10vw;
+  object-fit: contain;
+  border-radius: 5vw;
+  margin-top:0.5vh;
+  margin-left: 35vw;
+}
+
+/*footer information(team information) display*/
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   font-size: 0.5vw;
+   background-color: #e9e8d6;
+   color: #586B9D;
+   text-align: center;
+   margin-top: 0.4vh;
+   margin-bottom: 0vh;
+}
+
+/*flex box direction to column when screen width is small enough*/
+@media only screen and (max-width: 450px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+        align-items: center;
+        margin-top: 10vh;
+    }  
+}

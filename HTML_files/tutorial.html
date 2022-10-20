@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../CSS_files/tutorial.css">
+        <script src="../JS_files/tutorial.js" defer></script>
+        <script src="../JS_files/checker.js" defer></script>
+        <title>Set Game</title>
+    </head>
+
+    <!-- the tutorial page is divided into three parts: page buttons, game intro, and button explanation -->
+    <body>
+        <!-- three buttons for three pages -->
+        <div class = "page_heading">
+            <a href="home.html" class="navbar">HOME</a>
+            <a href="play.html" class="navbar">PLAY</a>
+            <a href="tutorial.html" class="navbar">TUTORIAL</a>
+        </div>
+
+        <!-- game introduction: basic, rule, and goal -->
+        <div class = "game_intro">   
+            <h3>Game Introduction</h3>  
+
+            <div class = "sub_intro">
+                <h4>Basic</h4>
+                <p>There are 81 unique cards in this SET game <br> Each card has four attributes: color, number, shape, and shading</p>
+            </div>
+            
+            <div class = "sub_intro">
+                <h4>Rule</h4>
+                <p>Each set contains three cards that each attribute of the three cards are all the same or all different <br> One score will be awarded if a set is found</p>
+                <p>A set consists of three cards satisfying 4 conditions: <br>
+                    (1) They all have the same number or have three different numbers <br>
+                    (2) They all have the same symbol or have three different symbols <br>
+                    (3) They all have the same shading or have three different shadings <br>
+                    (4) They all have the same color or have three different colors <br>
+                </p>
+                <img src="../images/rule.PNG" alt=rule>
+            </div>
+
+            <div class = "sub_intro">
+                <h4>Goal</h4>
+                <p>Find More SETs!</p>
+            </div>
+        </div>
+        
+        <!-- button explanation: start, set, hint, and shuffle-->
+        <div class = "game_intro">    
+            <h3>Button Explanation</h3>      
+             
+            <div class = "sub_intro">
+                <h4>Start</h4>
+                <p>Ready to go? Click me to start.</p>
+            </div>
+            
+            <div class = "sub_intro">
+                <h4>Set</h4>
+                <p>Found a set? Click me to earn score.</p>
+            </div>
+
+            <div class = "sub_intro">
+                <h4>Hint</h4>
+                <p>Can not find a set? Click me for an hint. </p>
+            </div>
+
+            <div class = "sub_intro">
+                <h4>Shuffle</h4>
+                <p>Shuffling is a procedure used to randomize a deck of playing cards to provide an element of chance in card game</p>
+            </div>
+        </div>
+
+        <!-- interative tuotorial: simple pratice game-->
+        <div class ="interactive_container">
+            <h3>Try it out</h3> 
+            <span id="message">Find the set by clicking on the cards.</span>
+            <div class = "deck">
+                <div class = "card" id = "cell0" onclick="selected(this.id)"></div>
+                <div class = "card" id = "cell1" onclick="selected(this.id)"></div>
+                <div class = "card" id = "cell2" onclick="selected(this.id)"></div>
+                <div class = "card" id = "cell3" onclick="selected(this.id)"></div>
+                <div class = "card" id = "cell4" onclick="selected(this.id)"></div>
+                <div class = "card" id = "cell5" onclick="selected(this.id)"></div>
+            </div>  
+            <div class="lower_panel">
+                <button id = "set" class = "game_action" onclick="isSet()">SET</button>
+                <button id = "hint" class = "game_action" onclick="hint()">HINT</button>            
+            </div>  
+        </div>
+
+    </body>
+</html>
